@@ -1,0 +1,17 @@
+<suite name="FrontierSuite" parallel="tests">
+	<test name="TestWithChrome"> 
+		<parameter name="browsername" value="chrome"></parameter>
+		<parameter name="appurl" value="https://www.frontier.com"></parameter>
+		<classes>
+			<class name="tests.FrontierValidAddressCheckTest"></class>
+		</classes>
+	</test>
+	
+	<test name="TestWithFirefox"> 
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="appurl" value="https://www.frontier.com"></parameter>
+		<classes>
+			<class name="tests.FrontierValidAddressCheckTest"></class>
+		</classes>
+	</test>
+</suite>
