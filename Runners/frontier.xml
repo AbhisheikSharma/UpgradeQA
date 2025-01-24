@@ -6,7 +6,6 @@
 			<class name="tests.FrontierValidAddressCheckTest"></class>
 		</classes>
 	</test>
-	
 	<test name="TestWithFirefox"> 
 		<parameter name="browsername" value="firefox"></parameter>
 		<parameter name="appurl" value="https://www.frontier.com"></parameter>
@@ -14,4 +13,5 @@
 			<class name="tests.FrontierValidAddressCheckTest"></class>
 		</classes>
 	</test>
+	
 </suite>

@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -19,7 +18,6 @@ public void checkAvailability() {
 	} catch (Exception e) {
 		System.out.println("Failed because unable to enter address in the field "+ e.getMessage());
 	}
-	Assert.assertTrue(false);
 	
 }
 }

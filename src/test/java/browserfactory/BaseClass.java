@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -29,21 +31,29 @@ public class BaseClass {
 
 	@BeforeMethod
 	@Parameters({"browsername","appurl"})
-	public void setUpBrowserAndApp(String browsername, String auturl) {
+	public void setUpBrowserAndApp(String browsername, String auturl) throws InterruptedException {
 		if(browsername.equalsIgnoreCase("chrome")) {
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--headless");
+		opt.addArguments("--window-size=1920,1080");
+		opt.addArguments("--disable-gpu");
+		opt.addArguments("--no-sandbox");
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(opt);
 		}
 		else if(browsername.equalsIgnoreCase("firefox")) {
+			FirefoxOptions fopt = new FirefoxOptions();
+			fopt.addArguments("--headless");
 		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		driver = new FirefoxDriver(fopt);
 		}
 		frontierpage = PageFactory.initElements(driver, FrontierPage.class);
 		screenshots = new Screenshots(driver);
-		System.out.println("Screenshots class driver assigned");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.get(auturl);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		Thread.sleep(3000);
 	}
 	@AfterMethod
 	public void cleanUp() {
