@@ -1,0 +1,12 @@
+<Configuration>
+	<Appenders>
+		<Console name="OnConsole">
+		<PatternLayout pattern="%d{HH:mm:ss:SSS} %-5level %c{1} -%msg%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="warn">
+			<AppenderRef ref="OnConsole"></AppenderRef>
+		</Root>
+	</Loggers>
+</Configuration>
