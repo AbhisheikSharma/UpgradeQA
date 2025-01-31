@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [FrontierSuite]">
-  <test thread-count="5" parallel="tests" name="TestWithChrome(failed)">
-    <parameter name="browsername" value="chrome"/>
-    <parameter name="appurl" value="https://www.frontier.com"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FrontierValidAddressCheckTest">
+      <class name="tests.Rev1">
         <methods>
-          <include name="cleanUp"/>
-          <include name="setUpBrowserAndApp"/>
-          <include name="checkAvailability"/>
-          <include name="setUpDataSources"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- tests.FrontierValidAddressCheckTest -->
+      </class> <!-- tests.Rev1 -->
     </classes>
-  </test> <!-- TestWithChrome(failed) -->
-  <test thread-count="5" parallel="tests" name="TestWithFirefox(failed)">
-    <parameter name="browsername" value="firefox"/>
-    <parameter name="appurl" value="https://www.frontier.com"/>
-    <classes>
-      <class name="tests.FrontierValidAddressCheckTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="checkAvailability"/>
-          <include name="setUpBrowserAndApp"/>
-          <include name="setUpDataSources"/>
-        </methods>
-      </class> <!-- tests.FrontierValidAddressCheckTest -->
-    </classes>
-  </test> <!-- TestWithFirefox(failed) -->
-</suite> <!-- Failed suite [FrontierSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

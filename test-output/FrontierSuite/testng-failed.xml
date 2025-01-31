@@ -15,18 +15,4 @@
       </class> <!-- tests.FrontierValidAddressCheckTest -->
     </classes>
   </test> <!-- TestWithChrome(failed) -->
-  <test thread-count="5" parallel="tests" name="TestWithFirefox(failed)">
-    <parameter name="browsername" value="firefox"/>
-    <parameter name="appurl" value="https://www.frontier.com"/>
-    <classes>
-      <class name="tests.FrontierValidAddressCheckTest">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="checkAvailability"/>
-          <include name="setUpBrowserAndApp"/>
-          <include name="setUpDataSources"/>
-        </methods>
-      </class> <!-- tests.FrontierValidAddressCheckTest -->
-    </classes>
-  </test> <!-- TestWithFirefox(failed) -->
 </suite> <!-- Failed suite [FrontierSuite] -->

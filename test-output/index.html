@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-FrontierSuite" class="navigator-link">
-              <span class="suite-name border-failed">FrontierSuite</span>
+            <a href="#" panel-name="suite-Regression" class="navigator-link">
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-FrontierSuite" class="navigator-link ">
-                    <span>frontier.xml</span>
+                  <a href="#" panel-name="test-xml-Regression" class="navigator-link ">
+                    <span>testnag.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-FrontierSuite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" panel-name="testlist-Regression" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-FrontierSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-Regression" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-FrontierSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-FrontierSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-FrontierSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-FrontierSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-FrontierSuite" class="hide-methods failed suite-FrontierSuite"> (hide)</a> <!-- hide-methods failed suite-FrontierSuite -->
-                      <a href="#" panel-name="suite-FrontierSuite" class="show-methods failed suite-FrontierSuite"> (show)</a> <!-- show-methods failed suite-FrontierSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods passed suite-Regression"> (hide)</a> <!-- hide-methods passed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
                     </span>
-                    <div class="method-list-content failed suite-FrontierSuite">
+                    <div class="method-list-content passed suite-Regression">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-FrontierSuite" title="tests.FrontierValidAddressCheckTest" class="method navigator-link" hash-for-method="checkAvailability">checkAvailability</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.TestNGParam" class="method navigator-link" hash-for-method="sumNums(2, 3)">sumNums(2, 3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-FrontierSuite" title="tests.FrontierValidAddressCheckTest" class="method navigator-link" hash-for-method="checkAvailability">checkAvailability</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-FrontierSuite -->
+                    </div> <!-- method-list-content passed suite-Regression -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,183 +117,117 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-FrontierSuite" class="panel FrontierSuite">
-          <div class="suite-FrontierSuite-class-failed">
+        <div panel-name="suite-Regression" class="panel Regression">
+          <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.FrontierValidAddressCheckTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestNGParam</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkAvailability">
-                  </a> <!-- checkAvailability -->
-                  <span class="method-name">checkAvailability</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at tests.FrontierValidAddressCheckTest.checkAvailability(FrontierValidAddressCheckTest.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkAvailability">
-                  </a> <!-- checkAvailability -->
-                  <span class="method-name">checkAvailability</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at tests.FrontierValidAddressCheckTest.checkAvailability(FrontierValidAddressCheckTest.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
+                  <a name="sumNums(2, 3)">
+                  </a> <!-- sumNums(2, 3) -->
+                  <span class="method-name">sumNums</span>
+                  <span class="parameters">(2,3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FrontierSuite-class-failed -->
-        </div> <!-- panel FrontierSuite -->
-        <div panel-name="test-xml-FrontierSuite" class="panel">
+          </div> <!-- suite-Regression-class-passed -->
+        </div> <!-- panel Regression -->
+        <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/abhisheiksharma/Upgrade/qa/Runners/frontier.xml</span>
+            <span class="header-content">/Users/abhisheiksharma/Upgrade/qa/Runners/testnag.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;FrontierSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestWithChrome&quot;&gt;
-    &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;appurl&quot; value=&quot;https://www.frontier.com&quot;/&gt;
+&lt;suite name=&quot;Regression&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;version 1.2&quot;&gt;
+    &lt;parameter name=&quot;param1&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;param2&quot; value=&quot;3&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.FrontierValidAddressCheckTest&quot;/&gt;
+      &lt;class name=&quot;tests.TestNGParam&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestWithChrome --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestWithFirefox&quot;&gt;
-    &lt;parameter name=&quot;browsername&quot; value=&quot;firefox&quot;/&gt;
-    &lt;parameter name=&quot;appurl&quot; value=&quot;https://www.frontier.com&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.FrontierValidAddressCheckTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestWithFirefox --&gt;
-&lt;/suite&gt; &lt;!-- FrontierSuite --&gt;
+  &lt;/test&gt; &lt;!-- version 1.2 --&gt;
+&lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-FrontierSuite" class="panel">
+        <div panel-name="testlist-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for FrontierSuite</span>
+            <span class="header-content">Tests for Regression</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestWithChrome (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TestWithFirefox (1 class)</span>
+                <span class="test-name">version 1.2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-FrontierSuite" class="panel">
+        <div panel-name="group-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for FrontierSuite</span>
+            <span class="header-content">Groups for Regression</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-FrontierSuite" class="panel">
+        <div panel-name="times-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for FrontierSuite</span>
+            <span class="header-content">Times for Regression</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_FrontierSuite');
-function tableData_FrontierSuite() {
+suiteTableInitFunctions.push('tableData_Regression');
+function tableData_Regression() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkAvailability')
-data.setCell(0, 2, 'tests.FrontierValidAddressCheckTest')
-data.setCell(0, 3, 4364);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkAvailability')
-data.setCell(1, 2, 'tests.FrontierValidAddressCheckTest')
-data.setCell(1, 3, 2364);
-window.suiteTableData['FrontierSuite']= { tableData: data, tableDiv: 'times-div-FrontierSuite'}
+data.setCell(0, 1, 'sumNums')
+data.setCell(0, 2, 'tests.TestNGParam')
+data.setCell(0, 3, 7);
+window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
-              <div id="times-div-FrontierSuite">
-              </div> <!-- times-div-FrontierSuite -->
+              <span class="suite-total-time">Total running time: 7 ms</span>
+              <div id="times-div-Regression">
+              </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-FrontierSuite" class="panel">
+        <div panel-name="reporter-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for FrontierSuite</span>
+            <span class="header-content">Reporter output for Regression</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-FrontierSuite" class="panel">
+        <div panel-name="ignored-methods-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-FrontierSuite" class="panel">
+        <div panel-name="chronological-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.FrontierValidAddressCheckTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setUpDataSources</span>
+              <div class="chronological-class-name">tests.TestNGParam</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sumNums(2, 3)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpBrowserAndApp(chrome, https://www.frontier.com)</span>
-                <span class="method-start">415 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpBrowserAndApp(firefox, https://www.frontier.com)</span>
-                <span class="method-start">415 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkAvailability</span>
-                <span class="method-start">5027 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkAvailability</span>
-                <span class="method-start">9047 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">10236 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">12118 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

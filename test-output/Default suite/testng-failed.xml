@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pagefactory.FrontierHomePage">
+      <class name="tests.Rev1">
         <methods>
-          <include name="checkAvailability"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- pagefactory.FrontierHomePage -->
+      </class> <!-- tests.Rev1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
